@@ -16,8 +16,9 @@ services:
     # docker-compose.yml file (the first in the devcontainer.json "dockerComposeFile"
     # array). The sample below assumes your primary file is in the root of your project.
     #
-    # build:
-    #   context: .
+    build:
+      context: .
+      target: develop
     #   dockerfile: .devcontainer/Dockerfile
     
     volumes:
