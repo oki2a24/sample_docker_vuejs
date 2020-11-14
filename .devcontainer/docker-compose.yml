@@ -17,8 +17,8 @@ services:
     # array). The sample below assumes your primary file is in the root of your project.
     #
     build:
-      context: .
       target: develop
+    #   context: .
     #   dockerfile: .devcontainer/Dockerfile
     
     volumes:
@@ -38,4 +38,5 @@ services:
     # command: /bin/sh -c "while sleep 1000; do :; done"
     tty: true
     working_dir: /workspace
- 
+    ports:
+      - "80:8080"
